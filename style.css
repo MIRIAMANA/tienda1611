@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Estilos para el header */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.logo {
+    width: 150px;  /* Ajusta el tamaño del logo según tu imagen */
+    height: auto;
+}
+
+.tagline {
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: italic;
+    color: #f5f5f5;
+}
+
+/* Estilos para los productos en fila */
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que los productos se ajusten en pantallas pequeñas */
+}
+
+.product {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 23%;  /* Ajusta el ancho de cada producto */
+    margin: 10px 0;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product .price {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.buy-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .products-container {
+        flex-direction: column; /* Muestra los productos en una columna */
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;  /* Ancho más pequeño en pantallas pequeñas */
+    }
+}
